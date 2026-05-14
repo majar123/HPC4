@@ -1,0 +1,7 @@
+nvcc -Wno-deprecated-gpu-targets -gencode=arch=compute_70,code=sm_70 -O3 -Xcompiler --openmp,-Wall -c -o main.o src/main.c
+nvcc -Wno-deprecated-gpu-targets -gencode=arch=compute_70,code=sm_70 -O3 -Xcompiler --openmp,-Wall lenia.o gifenc.o main.o orbium.o -o lenia.out -lm
+Execution time: 1246.386
+Execution time: 1246.308
+Execution time: 1246.418
+Execution time: 1246.838
+Execution time: 1246.846
