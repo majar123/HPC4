@@ -1,0 +1,31 @@
+rm -f gifenc.o lenia.o main.o orbium.o lenia.out
+mpicc -O3 -Wall  -c -o gifenc.o src/gifenc.c
+mpicc -O3 -Wall  -c -o lenia.o src/lenia.c
+mpicc -O3 -Wall  -c -o main.o src/main.c
+mpicc -O3 -Wall  -c -o orbium.o src/orbium.c
+mpicc -O3 -Wall gifenc.o lenia.o main.o orbium.o -o lenia.out  -lm
+Execution time: 18.791
+Execution time: 18.791
+Execution time: 18.791
+Execution time: 18.792
+RUN 1 DONE
+Execution time: 18.737
+Execution time: 18.738
+Execution time: 18.737
+Execution time: 18.738
+RUN 2 DONE
+Execution time: 37.433
+Execution time: 37.434
+Execution time: 37.434
+Execution time: 37.433
+RUN 3 DONE
+Execution time: 18.775
+Execution time: 18.777
+Execution time: 18.776
+Execution time: 18.776
+RUN 4 DONE
+Execution time: 18.790
+Execution time: 18.790
+Execution time: 18.791
+Execution time: 18.791
+RUN 5 DONE
