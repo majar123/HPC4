@@ -3,7 +3,7 @@
 #include "lenia.h"
 #include <mpi.h>
 
-#define N 1024
+#define N 2048
 #define NUM_STEPS 100
 #define DT 0.1
 #define KERNEL_SIZE 26

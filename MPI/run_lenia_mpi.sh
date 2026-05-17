@@ -2,9 +2,9 @@
 
 #SBATCH --reservation=fri
 #SBATCH --job-name=lenia
-#SBATCH --ntasks-per-node=32
+#SBATCH --ntasks-per-node=16
 #SBATCH --nodes=1
-#SBATCH --output=1024/32/lenia_out.log
+#SBATCH --output=2048/16/lenia_out.log
 #SBATCH --hint=nomultithread
 
 #Load MPI module 
